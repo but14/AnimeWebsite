@@ -12,7 +12,15 @@ const GET_AIRING_ANIME = "GET_AIRING_ANIME";
 
 
 const reducer = (state, action) => {
-    return state;
+    switch (action.type) {
+        case LOADING:
+            return {...state, loading: true}
+        case GET_POPULAR_ANIME:
+            return {...state, popularAnime: action.payload, loading: false};
+        default:
+            return state;
+    }
+
 }
 
 export const GlobalContextProvider = ({children}) => {
