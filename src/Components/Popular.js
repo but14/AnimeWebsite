@@ -8,14 +8,11 @@ function Popular() {
 
   const conditionalRender = () => {
     if (!isSearch) {
-      return popularAnime.map((anime) => (
-        <Link to={`/anime/${anime.mal_id}`} key={anime.mal_id}>
-          <img
-            src={anime.images.jpg.large_img_url}
-            alt={anime.title || "Anime Image"}
-          />
-        </Link>
-      ));
+      return popularAnime.map((anime) => {
+        return <Link to={`/anime/${anime.mal_id}`} key={anime.mal_id}>
+                    <img src={anime.images.jpg.large_image_url} alt="" />
+                </Link>
+      });
     }
   };
 
