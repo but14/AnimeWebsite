@@ -29,7 +29,7 @@ I built the website using the Jikan API (4.0.0).
 <img src="/img/img5.png" alt="..." width="1000px" />
 
 ### Directory Structure
-<img src="/img/img6.png" alt="..." width="1000px" />
+<img src="/img/img6.png" alt="..." width="500px" />
 
 ### Major Features
 
